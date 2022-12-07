@@ -1,0 +1,73 @@
+.main-grid {
+   padding: 20px 2%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 15px;
+}
+
+.main-grid-box {
+    background-color: bisque; 
+    padding: 10px 4%;
+}
+
+.flex-container {
+    padding: 10px 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+input {
+   position: relative;
+   padding: 8px;
+   left: 12.5%;
+   text-align: center;
+   width: 75%;
+   border-radius: 25px;
+   border: none;
+}
+
+.form-box {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+form {
+    padding-top: 60px
+}
+
+.flex-box {
+    width: 20%;
+    height: 150px;
+    background-color: aquamarine;
+}
+
+.ext {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.submit-btn {
+    background-color: green;
+}
+
+
+@media  (max-width: 420px) {
+    .main-grid {
+        display: block;
+    }
+
+    .main-grid-box {
+        margin: 20px 4%;
+    }
+}
+
+h3 {
+    text-align: center;
+}
+
+hr {
+    border-color: black;
+}
